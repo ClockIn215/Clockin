@@ -127,6 +127,12 @@
       "skillPath": ".agents/skills/verification-quality/SKILL.md",
       "computedHash": "7569499b537af1a7d51805b80830e062a950d8792067c95d1ebe78953a6b6634"
     },
+    "add-community-extension": {
+      "source": "github/spec-kit",
+      "sourceType": "github",
+      "skillPath": ".github/skills/add-community-extension/SKILL.md",
+      "computedHash": "4ba13e73cde458791574ed096d2812cf2a3ba7ac37a2fe3c0f2df1991036950f"
+    },
     "adr-create": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
