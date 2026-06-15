@@ -1405,6 +1405,18 @@
       "skillPath": "skills/requesting-code-review/SKILL.md",
       "computedHash": "874f3786b05007a8b4a60452a4cd89b9917c645d34b6b1e40ea05037d12f0e67"
     },
+    "research": {
+      "source": "Arindam200/awesome-ai-apps",
+      "sourceType": "github",
+      "skillPath": "advance_ai_agents/deep_research_writing_agents_nebius_okahu/.agents/skills/research/SKILL.md",
+      "computedHash": "be9df88f77b0edaf527a0701aa2c4aa03b2aadd159e9265fe5b5698c4ed357b9"
+    },
+    "research-and-write": {
+      "source": "Arindam200/awesome-ai-apps",
+      "sourceType": "github",
+      "skillPath": "advance_ai_agents/deep_research_writing_agents_nebius_okahu/.agents/skills/research-and-write/SKILL.md",
+      "computedHash": "dec440b3d30e64df2d1f3b984ca2e300e0b3e7c7ed547a906674074bebc9a1b8"
+    },
     "research-synthesize": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -1692,6 +1704,12 @@
       "sourceType": "github",
       "skillPath": "plugins/ruflo-workflows/skills/workflow-run/SKILL.md",
       "computedHash": "a6c379325082bb553857eb34ed28c3f04e158a2aad889252bc54a85aabe22b99"
+    },
+    "write-post": {
+      "source": "Arindam200/awesome-ai-apps",
+      "sourceType": "github",
+      "skillPath": "advance_ai_agents/deep_research_writing_agents_nebius_okahu/.agents/skills/write-post/SKILL.md",
+      "computedHash": "599f432446116bc9265bcf1fa43657cedabe1bf9e7b5ffcd5af4e0316dfb64f4"
     },
     "writing-plans": {
       "source": "obra/superpowers",
