@@ -980,9 +980,9 @@
       "computedHash": "6aadf889ac48d67c1ae0a55d058370ed6b48a18d81bed1ba8069b7edbf70eb3b"
     },
     "defuddle": {
-      "source": "kepano/obsidian-skills",
+      "source": "breferrari/obsidian-mind",
       "sourceType": "github",
-      "skillPath": "skills/defuddle/SKILL.md",
+      "skillPath": ".claude/skills/defuddle/SKILL.md",
       "computedHash": "ad2cf050eced5f0d9057d534bf6e084bd8d6e521529b5b783940b20fd835c4df"
     },
     "dependency-check": {
@@ -1208,9 +1208,9 @@
       "computedHash": "3dd994cce4bf1bcbc8aaea536d1b170052cda80658c6586ddef6018ed5559bcf"
     },
     "json-canvas": {
-      "source": "kepano/obsidian-skills",
+      "source": "breferrari/obsidian-mind",
       "sourceType": "github",
-      "skillPath": "skills/json-canvas/SKILL.md",
+      "skillPath": ".claude/skills/json-canvas/SKILL.md",
       "computedHash": "bb7aa4f03414d50d91736f824bc5f79122b38a895deb03c0260700842a338580"
     },
     "kg-extract": {
@@ -1364,22 +1364,22 @@
       "computedHash": "60e0981e6cff49cb9002c052776c4f4f532928a15b135ae60335670cab518634"
     },
     "obsidian-bases": {
-      "source": "kepano/obsidian-skills",
+      "source": "breferrari/obsidian-mind",
       "sourceType": "github",
-      "skillPath": "skills/obsidian-bases/SKILL.md",
-      "computedHash": "0d9958e07672384650f404bda4fc9268e1720e9234d42eeca29fc356b1e2a277"
+      "skillPath": ".claude/skills/obsidian-bases/SKILL.md",
+      "computedHash": "f26b102cdd28a3ee9d429e04b19590464108c062bf4765cfd1b073cc445016be"
     },
     "obsidian-cli": {
-      "source": "kepano/obsidian-skills",
+      "source": "breferrari/obsidian-mind",
       "sourceType": "github",
-      "skillPath": "skills/obsidian-cli/SKILL.md",
-      "computedHash": "89ded0eb1499286d5c95217df0ff7015aa46b7efe4646fafaba38cbac3289392"
+      "skillPath": ".claude/skills/obsidian-cli/SKILL.md",
+      "computedHash": "57d9495a79bd1ffc00edc075d75d19129b3d8fa3c423a45f18a0485305cdb5df"
     },
     "obsidian-markdown": {
-      "source": "kepano/obsidian-skills",
+      "source": "breferrari/obsidian-mind",
       "sourceType": "github",
-      "skillPath": "skills/obsidian-markdown/SKILL.md",
-      "computedHash": "d65bfcd6012560c61da9c88c79679a9a8218ac6b4928df9b55ae451949a1618a"
+      "skillPath": ".claude/skills/obsidian-markdown/SKILL.md",
+      "computedHash": "9ca4f671ffecfd020c8d9c733aed75bde42742fb5545b48b6bf8e5e54111b9ac"
     },
     "performance-analysis": {
       "source": "ruvnet/ruflo",
@@ -1392,6 +1392,12 @@
       "sourceType": "github",
       "skillPath": "plugins/ruflo-aidefence/skills/pii-detect/SKILL.md",
       "computedHash": "d45a911619429e860ba76f1e964d94ed188862a54ea820c5a73af219ea7df8fc"
+    },
+    "qmd": {
+      "source": "breferrari/obsidian-mind",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/qmd/SKILL.md",
+      "computedHash": "e191e548bc133957a3584eddd11ccf92ff4774bb4d6a02554dba549a2e2f5ce7"
     },
     "receiving-code-review": {
       "source": "obra/superpowers",
