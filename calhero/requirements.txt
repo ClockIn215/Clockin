@@ -1,0 +1,7 @@
+google-genai
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+python-dotenv
+datetime
+Flask>=3.0.0

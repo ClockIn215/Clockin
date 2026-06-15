@@ -1,0 +1,38 @@
+# Don't copy these to Docker image
+calenv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Credentials and tokens
+token.json
+credentials.json
+.env
+
+# Documentation
+*.md
+!README.md
+
+# Test files
+test_*.py
+
+# Screenshots (mount as volume instead)
+screenshots/processed/*
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store

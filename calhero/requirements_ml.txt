@@ -1,0 +1,16 @@
+# OCR and Image Processing Libraries
+pytesseract>=0.3.10
+opencv-python>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Google Calendar API (same as original)
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+
+# Configuration Management
+python-dotenv
+
+# HTTP Server (for Cloud Run deployment)
+Flask>=3.0.0

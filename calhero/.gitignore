@@ -1,0 +1,59 @@
+# Environment variables (contains secrets)
+.env
+.env.local
+.env.*.local
+.env.backup
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+calenv/
+calheroenv/
+venv/
+ENV/
+env/
+
+# Google Calendar credentials
+token.json
+credentials.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+.tox/
+
+# User's personal test data (ignored for privacy)
+results.json
+ground_truth.json
+
+# User's screenshots (may contain sensitive schedule data)
+screenshots/*.png
+screenshots/**/*.png
+screenshots/processed/
+screenshots/temp/
+screenshots/test/
+screenshots/backup/
+
+# Docker
+.docker/
+docker-compose.override.yml

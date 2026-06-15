@@ -1,0 +1,24 @@
+# Cloud Function / Docker Requirements
+# Includes both LLM and ML dependencies
+
+# Shared utilities
+google-api-python-client>=2.100.0
+google-auth-httplib2>=0.1.1
+google-auth-oauthlib>=1.1.0
+
+# LLM version (Gemini)
+google-genai>=0.2.0
+
+# ML/OCR version (Tesseract)
+pytesseract>=0.3.10
+opencv-python-headless>=4.8.0  # Headless version for Docker (smaller)
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Cloud function runtime
+functions-framework>=3.0.0
+flask>=2.3.0
+
+# Optional: Monitoring and logging
+google-cloud-logging>=3.5.0
+google-cloud-error-reporting>=1.9.0
