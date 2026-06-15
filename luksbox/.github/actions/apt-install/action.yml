@@ -1,0 +1,76 @@
+name: apt-install
+description: >-
+  Install Debian/Ubuntu packages with IPv4 forced and a retry loop.
+  Works around the recurring failure on GitHub Actions arm64 runners
+  where DNS for ports.ubuntu.com returns AAAA records but the runner
+  cannot route IPv6 to Canonical's mirrors; apt's default
+  IPv6-then-IPv4 fallback takes ~120s per failed host and ultimately
+  times out instead of using the working IPv4 path. The retry loop
+  also covers transient mirror outages on x86_64 runners.
+inputs:
+  packages:
+    description: >-
+      Whitespace-separated list of package names to install with
+      --no-install-recommends. Can be a multi-line string; whitespace
+      is collapsed.
+    required: true
+  attempts:
+    description: How many install attempts before giving up.
+    required: false
+    default: "5"
+  retry-delay-seconds:
+    description: Sleep between failed attempts.
+    required: false
+    default: "10"
+runs:
+  using: composite
+  steps:
+    - name: Configure apt for IPv4
+      shell: bash
+      run: |
+        # Idempotent: re-running this action in the same job (or
+        # across multiple `uses:` in one job) is safe.
+        #
+        # SUDO handling: hosted runners (ubuntu-22.04 / ubuntu-24.04 /
+        # ubuntu-*-arm) run steps as a regular user with passwordless
+        # sudo. Container-based steps (`container: debian:trixie`,
+        # used by the Trixie .deb matrix entry) run as root inside
+        # the container and typically don't have `sudo` installed at
+        # all. Detect once per invocation so both flows work without
+        # conditional copies of every command.
+        if [ "${EUID:-$(id -u)}" -eq 0 ]; then
+            SUDO=""
+        else
+            SUDO="sudo"
+        fi
+        echo 'Acquire::ForceIPv4 "true";' | \
+          $SUDO tee /etc/apt/apt.conf.d/99force-ipv4 > /dev/null
+    - name: apt-get install with retry
+      shell: bash
+      env:
+        APT_PACKAGES: ${{ inputs.packages }}
+        APT_ATTEMPTS: ${{ inputs.attempts }}
+        APT_RETRY_DELAY: ${{ inputs.retry-delay-seconds }}
+      run: |
+        set -u
+        if [ "${EUID:-$(id -u)}" -eq 0 ]; then
+            SUDO=""
+        else
+            SUDO="sudo"
+        fi
+        # Collapse whitespace + newlines so callers can pass the
+        # package list on multiple lines for readability.
+        pkgs=$(echo "$APT_PACKAGES" | tr '\n' ' ' | tr -s ' ')
+        for attempt in $(seq 1 "$APT_ATTEMPTS"); do
+          if $SUDO apt-get update && \
+             $SUDO apt-get install -y --no-install-recommends $pkgs; then
+            echo "apt install succeeded on attempt $attempt"
+            exit 0
+          fi
+          if [ "$attempt" -lt "$APT_ATTEMPTS" ]; then
+            echo "apt install attempt $attempt failed; retry in ${APT_RETRY_DELAY}s..."
+            sleep "$APT_RETRY_DELAY"
+          fi
+        done
+        echo "apt install failed after $APT_ATTEMPTS attempts"
+        exit 1

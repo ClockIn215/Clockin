@@ -1,0 +1,86 @@
+[package]
+name = "luksbox-mount"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Mount adapter for luksbox containers (FUSE3 on Linux/macOS, WinFsp on Windows)"
+
+[dependencies]
+luksbox-vfs = { path = "../luksbox-vfs" }
+thiserror.workspace = true
+
+[target.'cfg(any(target_os = "linux", target_os = "macos"))'.dependencies]
+# Optional so the `mount` subcommand can be skipped on macOS CI builds
+# (macFUSE install on github runners is brittle: the kext install needs
+# user approval). Default-on to keep the local Linux/macOS dev path
+# unchanged. Disable with `--no-default-features` to ship a CLI/GUI
+# without mount support.
+fuser = { workspace = true, optional = true }
+libc.workspace = true
+ctrlc.workspace = true
+
+[target.'cfg(target_os = "macos")'.dependencies]
+# FUSE-T (kext-free macOS FUSE) backend. Optional so a build that
+# only wants macFUSE doesn't pull in libfuse-t.dylib (the two
+# providers can't coexist in the same process). Activated by the
+# `fuse-t` feature; mount() then dispatches to fuse_t::mount() on
+# macOS instead of fuse::mount(). See crate docstring for the
+# Cargo-feature-vs-runtime-detection rationale.
+luksbox-fuse-t = { path = "../luksbox-fuse-t", optional = true }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+zbus.workspace = true
+
+[target.'cfg(target_os = "windows")'.dependencies]
+# MIT-licensed Rust binding (Scille/Parsec). Pulls in winfsp_wrs_sys which
+# requires the WinFsp 2.x SDK installed on the BUILD host (headers + .lib)
+# and the WinFsp kernel driver on the RUNTIME host (https://winfsp.dev/rel/).
+# Optional so MinGW cross-builds from Linux (where the SDK can't be apt-
+# installed) can skip the link by building --no-default-features.
+winfsp_wrs = { version = "0.4", optional = true }
+# Used by the WinFsp adapter to catch Ctrl-C and call FileSystem::stop()
+# for a clean unmount; without it the mount holder is killed mid-IO and
+# the kernel driver can leave the drive letter half-attached.
+ctrlc.workspace = true
+# Used to look up the current process's user SID so the volume's
+# default security descriptor grants Full Access to the *user that
+# mounted the volume* + Administrators + SYSTEM, instead of the prior
+# Everyone (`WD`) which let any local logon read decrypted contents
+# while mounted. Already a transitive dep of `winfsp_wrs`, declared
+# explicitly here for the SID lookup in `winfsp.rs::current_user_sid`.
+windows-sys = { version = "0.61", features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_Security_Authorization",
+    "Win32_System_Threading",
+] }
+
+[dev-dependencies]
+luksbox-core = { path = "../luksbox-core" }
+luksbox-format = { path = "../luksbox-format" }
+tempfile = "3"
+
+[features]
+default = ["fuse", "winfsp"]
+# Pull in fuser and enable the `mount` subcommand on Linux + macOS
+# via libfuse2 / macFUSE. Disable on macOS CI builds without macFUSE;
+# mount() then returns MountError::Unsupported on those targets at
+# runtime. Mutually exclusive with `fuse-t` on macOS (the two providers
+# install incompatible libfuse versions and can't link into the same
+# binary). On Linux only `fuse` is meaningful, `fuse-t` is a macOS-only
+# concept.
+fuse = ["dep:fuser"]
+# Pull in luksbox-fuse-t and route the macOS mount() / unmount() path
+# to FUSE-T (https://www.fuse-t.org/) instead of macFUSE. FUSE-T uses
+# an NFS-over-loopback transport so it doesn't need a kernel
+# extension. Build on a host that has `brew install --cask fuse-t`,
+# the dependent crate's build.rs probes for FUSE-T's headers and fails
+# the build with a clear message if it can't find them. NOT compatible
+# with the `fuse` feature on macOS (link-level conflict, see comment
+# above), pick one. On Linux the feature is accepted but inert.
+fuse-t = ["dep:luksbox-fuse-t"]
+# Pull in winfsp_wrs and enable the `mount` subcommand on Windows.
+# Disable on cross-builds without the WinFsp SDK; mount() then returns
+# MountError::Unsupported on Windows targets at runtime.
+winfsp = ["dep:winfsp_wrs"]

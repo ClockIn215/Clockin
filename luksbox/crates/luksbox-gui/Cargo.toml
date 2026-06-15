@@ -1,0 +1,97 @@
+[package]
+name = "luksbox-gui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+description = "luksbox desktop GUI (pure-Rust egui, no webview, no JS, no XSS surface)"
+build = "build.rs"
+
+[build-dependencies]
+# Embeds assets/icon.ico into luksbox-gui.exe via the Win32 RT_ICON
+# resource. No-op on non-Windows targets. Pulled in unconditionally
+# because Cargo build-dep target gating is unreliable across cross
+# toolchains, the crate itself does the cfg(windows) check internally.
+winresource = "0.1"
+
+[features]
+default = ["hardware", "fuse", "winfsp"]
+# Pulls in libfido2 via luksbox-fido2's `hardware` feature AND
+# libtss2-* via luksbox-tpm's `hardware` feature so FIDO2
+# authenticators + Linux TPM 2.0 chips both work for enroll/unlock
+# in the GUI. Build with `--no-default-features` to get a software-
+# only build (both hardware paths are then disabled at runtime;
+# luksbox-tpm's stub gracefully no-ops on every platform).
+hardware = ["luksbox-fido2/hardware", "luksbox-tpm/hardware"]
+# Enables FUSE-backed `mount` on Linux + macOS via the libfuse2 /
+# macFUSE path. Disable on macOS CI builds without macFUSE.
+fuse = ["luksbox-mount/fuse"]
+# Enables the kext-free FUSE-T backend on macOS. Mutually exclusive
+# with `fuse` on macOS at link time. The GUI re-exposes this feature
+# so the release workflow can pass `--features fuse-t` to the gui
+# crate the same way it does to the CLI.
+fuse-t = ["luksbox-mount/fuse-t"]
+# Pulls in WinFsp on Windows so the GUI's mount feature works.
+# Disable for MinGW cross-builds without the WinFsp SDK.
+winfsp = ["luksbox-mount/winfsp"]
+
+[dependencies]
+eframe = { version = "0.34", default-features = false, features = ["default_fonts", "glow", "wayland", "x11"] }
+egui = "0.34"
+egui_extras = { version = "0.34", default-features = false, features = ["image"] }
+image = { version = "0.25", default-features = false, features = ["png"] }
+# rfd default uses GTK3 on Linux, small system dep, no JS engine, no
+# WebView. We use the synchronous picker so the GUI doesn't need an
+# async runtime.
+rfd = "0.15"
+dirs = "5"
+serde = { workspace = true }
+serde_json = "1"
+zeroize = { workspace = true }
+rand_core = { workspace = true }
+# Realistic passphrase strength estimator (Dropbox / Bitwarden's algorithm).
+zxcvbn = "3"
+# Hash-compare the clipboard contents at auto-clear time so we don't
+# wipe a user's subsequent unrelated copy (the KeePassXC pattern).
+sha2 = { workspace = true }
+# Used by the deniable-FIDO2 unlock path to decode user-pasted
+# cred_id + hmac_salt hex strings (and by the create-success
+# modal to render them as hex for the user to save).
+hex = "0.4"
+# Direct OS clipboard access - egui's `ctx.copy_text` is write-only,
+# we need a read path to compare hashes before clearing. arboard is
+# the standard cross-platform crate, ~2k LoC pure-Rust on each backend.
+arboard = "3"
+
+luksbox-core = { path = "../luksbox-core" }
+luksbox-format = { path = "../luksbox-format" }
+luksbox-pq = { path = "../luksbox-pq" }
+luksbox-fido2 = { path = "../luksbox-fido2" }
+luksbox-tpm = { path = "../luksbox-tpm", default-features = false }
+luksbox-vfs = { path = "../luksbox-vfs" }
+# default-features = false so `--no-default-features` on the gui also
+# disables luksbox-mount's `winfsp` default. Re-enabled via the
+# `winfsp = ["luksbox-mount/winfsp"]` feature above.
+luksbox-mount = { path = "../luksbox-mount", default-features = false }
+
+# Used by the pre-flight check in `start_mount_subprocess` to detect
+# when another process (e.g. a stale helper from a previous mount or
+# a CLI `luksbox mount`) already holds an exclusive lock on the vault
+# file. Catches the conflict in the parent with a friendly toast
+# instead of letting the helper subprocess fail with VaultLocked +
+# exit code 1.
+fs2 = "0.4"
+
+# SIGPIPE constant for exit_status_is_clean_unmount on macOS
+# (FUSE-T helper subprocess sometimes exits with signal 13 during
+# unmount; we classify that as a clean unmount). Cheap to compile
+# in on every Unix.
+[target.'cfg(unix)'.dependencies]
+libc.workspace = true
+
+[dev-dependencies]
+tempfile = "3"
+# Used by the recents-permissions test (Unix-only) which sets
+# umask in the test process via `libc::umask`.
+[target.'cfg(unix)'.dev-dependencies]
+libc = "0.2"

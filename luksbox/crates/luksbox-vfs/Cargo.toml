@@ -1,0 +1,24 @@
+[package]
+name = "luksbox-vfs"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "In-memory VFS layer over a luksbox container"
+
+[dependencies]
+luksbox-core = { path = "../luksbox-core" }
+luksbox-format = { path = "../luksbox-format" }
+serde.workspace = true
+postcard.workspace = true
+rand_core.workspace = true
+thiserror.workspace = true
+zeroize.workspace = true
+
+[dev-dependencies]
+tempfile = "3"
+# Enable luksbox-format's `test-injection` feature for our own tests
+# (FlushOp log + crash-injection + SimFile). Cargo unifies features
+# across this and the [dependencies] entry, so release builds of
+# downstream crates still pull luksbox-format WITHOUT the feature.
+luksbox-format = { path = "../luksbox-format", features = ["test-injection"] }
