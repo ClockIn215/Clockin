@@ -697,6 +697,12 @@
       "skillPath": ".agents/skills/agentic-jujutsu/SKILL.md",
       "computedHash": "920fd5a6b7180bb765c41ef90282736ee25a947b2adc6b2302235dbbd19b26a0"
     },
+    "api-and-interface-design": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/api-and-interface-design/SKILL.md",
+      "computedHash": "0fabf9c3fc2577eab57833f660efef943b78d5c6ae5f0d8e82b600cc22563dbc"
+    },
     "api-docs": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -781,6 +787,12 @@
       "skillPath": "plugins/ruflo-browser/skills/browser-test/SKILL.md",
       "computedHash": "d2ad68a063268453b46e8aa9e158fa4b9954056b97c7bd0fd5c8135e58af80ba"
     },
+    "browser-testing-with-devtools": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/browser-testing-with-devtools/SKILL.md",
+      "computedHash": "cabd01ae931f23f5d1a0e86f280015794fcc5662e8ce593ce6be132057f8b3b8"
+    },
     "build-iphone-apps": {
       "source": "glittercowboy/taches-cc-resources",
       "sourceType": "github",
@@ -799,17 +811,41 @@
       "skillPath": "plugins/ruflo-ruvllm/skills/chat-format/SKILL.md",
       "computedHash": "673bd6b249643d384cde102bb941e9108c6e3f511cc5e4ce37fc7f305487956e"
     },
+    "ci-cd-and-automation": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ci-cd-and-automation/SKILL.md",
+      "computedHash": "f927700883a2b0f47d150d6ba27faf9006046641404480167d0b860564d11176"
+    },
     "claims": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
       "skillPath": ".agents/skills/claims/SKILL.md",
       "computedHash": "d8e070c74737c4b6333f4e1af0b94d2683b67e76a3972bd054b3244a607c8795"
     },
+    "code-review-and-quality": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/code-review-and-quality/SKILL.md",
+      "computedHash": "31afa3c52991ed84a1f0b97d5a9dc9f1ada08307108e88c3102de7c41a50c0a4"
+    },
+    "code-simplification": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/code-simplification/SKILL.md",
+      "computedHash": "aa9393832e77d2a89d91a8004dfb9d32670f4dcb46f2fd873c1dcad53e1f1f61"
+    },
     "cognitive-pattern": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
       "skillPath": "plugins/ruflo-daa/skills/cognitive-pattern/SKILL.md",
       "computedHash": "49b9ca4f121008072d5d23412f3e7a3f47bf944939a2f6aeaa701f673c2095cf"
+    },
+    "context-engineering": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/context-engineering/SKILL.md",
+      "computedHash": "1296ce5de6ca27323e8ad6dba640744770bc868c8cf49d0934b484c553c80243"
     },
     "cost-benchmark": {
       "source": "ruvnet/ruflo",
@@ -973,6 +1009,12 @@
       "skillPath": "skills/debug-like-expert/SKILL.md",
       "computedHash": "82c4aef8b5cc5af9a7b00fb71bb57e527f6fdbc47f3d17f23f4e2688593f0684"
     },
+    "debugging-and-error-recovery": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/debugging-and-error-recovery/SKILL.md",
+      "computedHash": "00f95b1754573cbc5f01e3cec5b40759dcd0be97b3abcaffec05fb70422e5bc6"
+    },
     "deep-research": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -990,6 +1032,12 @@
       "sourceType": "github",
       "skillPath": "plugins/ruflo-security-audit/skills/dependency-check/SKILL.md",
       "computedHash": "9502ff42fdbdcedc5ecdacf57efa7e773974c68806480f287b1c862d891cb424"
+    },
+    "deprecation-and-migration": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/deprecation-and-migration/SKILL.md",
+      "computedHash": "3671326de345b4a60a19c6d665bd0c3c6761792df0b553cf54200901d8f756b2"
     },
     "diff-analyze": {
       "source": "ruvnet/ruflo",
@@ -1015,11 +1063,23 @@
       "skillPath": "plugins/ruflo-docs/skills/doc-gen/SKILL.md",
       "computedHash": "f270024d7eeac66567f866f38b631c54e07e2f4c8f29d7345c757f373f756fe3"
     },
+    "documentation-and-adrs": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/documentation-and-adrs/SKILL.md",
+      "computedHash": "d751b98cb2894feb833af869f397aaaadd9a3a679882331c1a5b254e8ed1399a"
+    },
     "dossier-collect": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
       "skillPath": "plugins/ruflo-goals/skills/dossier-collect/SKILL.md",
       "computedHash": "1fdb3f28bdbda441f8e3baa9c01c4c3f1a6e8be7836189aacb8187cf077b1e6d"
+    },
+    "doubt-driven-development": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/doubt-driven-development/SKILL.md",
+      "computedHash": "1595be2b80bb3ac1029431e8e63023cf1954b19106738480967fa93c2fe56a64"
     },
     "embeddings": {
       "source": "ruvnet/ruflo",
@@ -1075,6 +1135,12 @@
       "skillPath": ".agents/skills/flow-nexus-swarm/SKILL.md",
       "computedHash": "254bd263191318f3aee56712b68745bbd8b64f7e87116daffac1d72fae6f4d01"
     },
+    "frontend-ui-engineering": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-ui-engineering/SKILL.md",
+      "computedHash": "195659873a8fe0bac6947e44731c3e23b97ec2caf2c124ce4c808658c555f98d"
+    },
     "gaia-architecture-comparison": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -1098,6 +1164,12 @@
       "sourceType": "github",
       "skillPath": "plugins/ruflo-jujutsu/skills/git-workflow/SKILL.md",
       "computedHash": "ad271bd096b883c8ef2464b442c0f618b49b52db1416c3f49bc0c5d66d4a98b5"
+    },
+    "git-workflow-and-versioning": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/git-workflow-and-versioning/SKILL.md",
+      "computedHash": "f4687d5f0edc5693f1414546cd02909b22f4de61ef89d17254ed1ee7cdcffab5"
     },
     "github-automation": {
       "source": "ruvnet/ruflo",
@@ -1159,6 +1231,18 @@
       "skillPath": "plugins/ruflo-goals/skills/horizon-track/SKILL.md",
       "computedHash": "bbc0ca4a69f092c2561ef29d7e4dd07606c58e1819fc3f6ef008960c3a2ba703"
     },
+    "idea-refine": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/idea-refine/SKILL.md",
+      "computedHash": "525f928bccf704e28f5be90f55d0bba94517e566034a45b92b71e2ae11a7ad0b"
+    },
+    "incremental-implementation": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/incremental-implementation/SKILL.md",
+      "computedHash": "27a55fa6a8ca32d2f16198ad0585511ba41c489a527c9a4b51c96ad7f1a3ffce"
+    },
     "init-project": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -1176,6 +1260,12 @@
       "sourceType": "github",
       "skillPath": "plugins/ruflo-intelligence/skills/intelligence-transfer/SKILL.md",
       "computedHash": "6aae70ad2c5fde8b54142a0912c49b300d8d231fa42ce4999f69efcf55a4d160"
+    },
+    "interview-me": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/interview-me/SKILL.md",
+      "computedHash": "85726440a832ced82cc55c5b550daba3f693db1013d771dc7b8e41c6b565ba8e"
     },
     "iot-anomalies": {
       "source": "ruvnet/ruflo",
@@ -1351,6 +1441,12 @@
       "skillPath": ".agents/skills/neural-training/SKILL.md",
       "computedHash": "10589bb8b53c1f0d0e1e1fcc23e5d449bed14ba048db57018096bc6d1b4265ad"
     },
+    "observability-and-instrumentation": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/observability-and-instrumentation/SKILL.md",
+      "computedHash": "d57a13b7c4c9528f747c06820c2872369b1f405962f9d68c1dd9905714103261"
+    },
     "observe-metrics": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -1387,11 +1483,23 @@
       "skillPath": ".agents/skills/performance-analysis/SKILL.md",
       "computedHash": "1ec1d37a93279520f104700b87b02e07194516026e9cdf66ce327e17a532217e"
     },
+    "performance-optimization": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/performance-optimization/SKILL.md",
+      "computedHash": "e143bfc3b19f8009b3399bdd96deba13e4edb6cdbd9f7f30b570ba5ea49e3613"
+    },
     "pii-detect": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
       "skillPath": "plugins/ruflo-aidefence/skills/pii-detect/SKILL.md",
       "computedHash": "d45a911619429e860ba76f1e964d94ed188862a54ea820c5a73af219ea7df8fc"
+    },
+    "planning-and-task-breakdown": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/planning-and-task-breakdown/SKILL.md",
+      "computedHash": "c0d5b44e73aca912582038b8a663cdb9efb043e4c2b024a89d47808e23b134c9"
     },
     "qmd": {
       "source": "breferrari/obsidian-mind",
@@ -1447,6 +1555,12 @@
       "skillPath": "plugins/ruflo-aidefence/skills/safety-scan/SKILL.md",
       "computedHash": "5f412fa183a7c259a432d0d35d7811df52c0cd72bc8c0a736dea986f0db990fe"
     },
+    "security-and-hardening": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/security-and-hardening/SKILL.md",
+      "computedHash": "149ac0ecdf73998b17ba8edb51aaf614771dd576e50924058bf3bdedff3329f4"
+    },
     "security-audit": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -1471,6 +1585,18 @@
       "skillPath": "skills/setup-ralph/SKILL.md",
       "computedHash": "4aeca810e614dce8b5f68dd0d2d75edc45293eff4aae827519f0cead69290458"
     },
+    "shipping-and-launch": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/shipping-and-launch/SKILL.md",
+      "computedHash": "59adff2e4da83a3e01f9944f2cfb1bb50b8b98f1c39ec376032b13c6ae2096fa"
+    },
+    "source-driven-development": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/source-driven-development/SKILL.md",
+      "computedHash": "c8af82fc8af511521f7881fecd312752c14af3081e933388414e1c5da108d2fe"
+    },
     "sparc-implement": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -1494,6 +1620,12 @@
       "sourceType": "github",
       "skillPath": "plugins/ruflo-sparc/skills/sparc-spec/SKILL.md",
       "computedHash": "aed3182eb94b47511f9e2748cac89a19fb3ff11aacb5da0025c384b291244737"
+    },
+    "spec-driven-development": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/spec-driven-development/SKILL.md",
+      "computedHash": "a646faab486907990abf2b5faa329e168e11b83c8a64f68ca2a8568ec3984276"
     },
     "stream-chain": {
       "source": "ruvnet/ruflo",
@@ -1538,10 +1670,10 @@
       "computedHash": "99143b7772cf5bfd17b53292f9134e3943739c2521366243e1ca8718721cf28a"
     },
     "test-driven-development": {
-      "source": "obra/superpowers",
+      "source": "addyosmani/agent-skills",
       "sourceType": "github",
       "skillPath": "skills/test-driven-development/SKILL.md",
-      "computedHash": "126f1ebf6ccd414f42544f6e83d8cc5adb089e1108eaffb7c400701e37eecd9f"
+      "computedHash": "909cbc5298acd30d064ba014463ebdecbabc253caf7986ba8cc25633af86f3df"
     },
     "test-gaps": {
       "source": "ruvnet/ruflo",
@@ -1608,6 +1740,12 @@
       "sourceType": "github",
       "skillPath": "plugins/ruflo-neural-trader/skills/trader-train/SKILL.md",
       "computedHash": "4eaeecfcd0ad60f553d2f540a38dcd6d178d84a8c492ed97c7811eda6dfac497"
+    },
+    "using-agent-skills": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/using-agent-skills/SKILL.md",
+      "computedHash": "87489d15f8f826ff37c3096883c9b9106f340227918dc4f033d80fa62c349e8c"
     },
     "using-git-worktrees": {
       "source": "obra/superpowers",

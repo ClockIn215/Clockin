@@ -22,11 +22,10 @@ Base files use the `.base` extension and contain valid YAML.
 # Global filters apply to ALL views in the base
 filters:
   # Can be a single filter string
-  # OR a recursive filter object with exactly ONE key: and, or, or not
-  and:
-    - 'status == "active"'
-    - not:
-        - 'file.hasTag("archived")'
+  # OR a recursive filter object with and/or/not
+  and: []
+  or: []
+  not: []
 
 # Define formula properties that can be used across all views
 formulas:
@@ -53,9 +52,8 @@ views:
     groupBy:                     # Optional: group results
       property: property_name
       direction: ASC | DESC
-    filters:                     # View-specific filters follow the same rules
-      and:
-        - 'status == "active"'
+    filters:                     # View-specific filters
+      and: []
     order:                       # Properties to display in order
       - file.name
       - property_name
