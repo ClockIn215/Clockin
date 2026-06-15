@@ -715,6 +715,12 @@
       "skillPath": "plugins/ruflo-docs/skills/api-docs/SKILL.md",
       "computedHash": "6c77aeaf2eda26e71b0d09c7c8f5655fea4a917dd3b455dcfdcf957b8a4de06c"
     },
+    "apk-redteam-pipeline": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/apk-redteam-pipeline/SKILL.md",
+      "computedHash": "7fb75a4d89aacc694c3b9e041ad04f19816cf7ab6de93485408e97269b5ec97a"
+    },
     "autopilot-loop": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -726,6 +732,18 @@
       "sourceType": "github",
       "skillPath": "plugins/ruflo-autopilot/skills/autopilot-predict/SKILL.md",
       "computedHash": "8e649fb8dab5c5f0df287a1aa08f0b1476eafe513918441e67afda3a71cb625b"
+    },
+    "bb-local-toolkit": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/bb-local-toolkit/SKILL.md",
+      "computedHash": "65002ab2ef59886906ee133342301849d8924b70aad9257675e08d5ab22030e3"
+    },
+    "bb-methodology": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/bb-methodology/SKILL.md",
+      "computedHash": "67eb0ee790dc6937fcac0215475ff82d078a6af648a5ad94e8317c532486db04"
     },
     "brainstorming": {
       "source": "obra/superpowers",
@@ -799,6 +817,18 @@
       "skillPath": "skills/browser-testing-with-devtools/SKILL.md",
       "computedHash": "cabd01ae931f23f5d1a0e86f280015794fcc5662e8ce593ce6be132057f8b3b8"
     },
+    "bug-bounty": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/bug-bounty/SKILL.md",
+      "computedHash": "8246f97fc2c61c901d879754f5867b9576ca23d6ec0347640cb4f300ac193187"
+    },
+    "bugcrowd-reporting": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/bugcrowd-reporting/SKILL.md",
+      "computedHash": "b14b560a8989a7f5f24086f3b9b840d16520bc38fd45c1be01601e5656807830"
+    },
     "build-iphone-apps": {
       "source": "glittercowboy/taches-cc-resources",
       "sourceType": "github",
@@ -828,6 +858,12 @@
       "sourceType": "github",
       "skillPath": ".agents/skills/claims/SKILL.md",
       "computedHash": "d8e070c74737c4b6333f4e1af0b94d2683b67e76a3972bd054b3244a607c8795"
+    },
+    "cloud-iam-deep": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/cloud-iam-deep/SKILL.md",
+      "computedHash": "90de84540573191252a59942b60c422341e18b3647c572311c458dd526e74fe8"
     },
     "code-review-and-quality": {
       "source": "addyosmani/agent-skills",
@@ -1093,6 +1129,18 @@
       "skillPath": ".agents/skills/embeddings/SKILL.md",
       "computedHash": "581cb38d81589615d4d8cc2e5a0100c2963ec13a4cf0a9bf37e372a800291a14"
     },
+    "enterprise-vpn-attack": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/enterprise-vpn-attack/SKILL.md",
+      "computedHash": "866f77cb5bda2ffbb36846a0609309c09509acb416e8bc2e86a96bd16861f7f2"
+    },
+    "evidence-hygiene": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/evidence-hygiene/SKILL.md",
+      "computedHash": "dae144d9f4de0a84e23b5efb7487b4705a85a93dca368ef65d3835f50a45363f"
+    },
     "executing-plans": {
       "source": "obra/superpowers",
       "sourceType": "github",
@@ -1237,6 +1285,294 @@
       "skillPath": "plugins/ruflo-goals/skills/horizon-track/SKILL.md",
       "computedHash": "bbc0ca4a69f092c2561ef29d7e4dd07606c58e1819fc3f6ef008960c3a2ba703"
     },
+    "hunt-api-misconfig": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-api-misconfig/SKILL.md",
+      "computedHash": "181e83342bc495021bd0714a35879c032af687adb287a6324843958691392dc7"
+    },
+    "hunt-aspnet": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-aspnet/SKILL.md",
+      "computedHash": "6bb5bf161d9da7a4bb0e10c2775732813433228ec084bdd8eb97baf6ebd1f575"
+    },
+    "hunt-ato": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-ato/SKILL.md",
+      "computedHash": "f66b16b517f615b8099a0b91ad85788bf3642bff7fd410fac1a041244da9b8d2"
+    },
+    "hunt-auth-bypass": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-auth-bypass/SKILL.md",
+      "computedHash": "9ee42189e0e2e8d6bb95df2696e1de2a3628decf82c21cc043e18a88d1fddf2b"
+    },
+    "hunt-brute-force": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-brute-force/SKILL.md",
+      "computedHash": "a85df870e507388abb645a9c106dde75646524a639d480c2ec946d0797456b50"
+    },
+    "hunt-business-logic": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-business-logic/SKILL.md",
+      "computedHash": "67e3165f1504e8fa770e12d375402eacd18bc9bb223ccbb6723e6fa2dc85ce1e"
+    },
+    "hunt-cache-poison": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-cache-poison/SKILL.md",
+      "computedHash": "eca885b713bf926088c28cf57524cb305dd49f03149e694874b646ba339a7dca"
+    },
+    "hunt-cicd": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-cicd/SKILL.md",
+      "computedHash": "2259ba7f0d5615a383e23e9aa2bd107e1c400cb714c4911745940cf0ac7490af"
+    },
+    "hunt-cloud-misconfig": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-cloud-misconfig/SKILL.md",
+      "computedHash": "c4f98556cf21cec9549d66d4ed6753e84126a64a1cc2bdec53a1607eae32da8c"
+    },
+    "hunt-cors": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-cors/SKILL.md",
+      "computedHash": "c4c63fcd01a24b3311f0bd15bd168b4092bdc8cddf2db6eeca7d6b74f112ca09"
+    },
+    "hunt-csrf": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-csrf/SKILL.md",
+      "computedHash": "06312c474147d8e644ac477f3ebd85a09feae0de750607cd7b57572fff0ba550"
+    },
+    "hunt-deserialization": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-deserialization/SKILL.md",
+      "computedHash": "4d19be1145824b9f4e37f0647ce3fd0c74abd75c47cda3c1a970f6f498b9da9b"
+    },
+    "hunt-dispatch": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-dispatch/SKILL.md",
+      "computedHash": "8ef37b5a0f87f3cd0823a4fd7aa0f45e1bfb3a7dfb7ab0908538ce7ef58ad6e2"
+    },
+    "hunt-dom": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-dom/SKILL.md",
+      "computedHash": "9dce616472a811765a0fa09e5b17b005270e314f0a425d89f19254b69dc26636"
+    },
+    "hunt-file-upload": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-file-upload/SKILL.md",
+      "computedHash": "44e3dbe2bcac110a23ce068c15774045bb98a1934f996d8cb21ec0be30318936"
+    },
+    "hunt-graphql": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-graphql/SKILL.md",
+      "computedHash": "cfefae4d4de1a05943d6820b92201a3edea5825b5b137a8b1bd8c59a22406387"
+    },
+    "hunt-grpc": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-grpc/SKILL.md",
+      "computedHash": "d75e9cb3b7a7df855e1aa317436925565bfe45e07f11c5fbd49dd2dbf0e54942"
+    },
+    "hunt-host-header": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-host-header/SKILL.md",
+      "computedHash": "c0d85cd8060b3ca10a605ff8aa18e952119406457bd0d982db87e1ec7188b050"
+    },
+    "hunt-http-smuggling": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-http-smuggling/SKILL.md",
+      "computedHash": "5e27c4135dfcbc7de195150ef36262676cbd6b0778e1a9d61c61ef5a89b7d866"
+    },
+    "hunt-idor": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-idor/SKILL.md",
+      "computedHash": "d32603d186e48c09c440c02345ee69f8faf03f5079d0b8bfc04bd222eb26ae23"
+    },
+    "hunt-k8s": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-k8s/SKILL.md",
+      "computedHash": "1c52cd60ef020fda1e2f66c0143a0d86b1cd11db7238034be698e7e9f4e2716e"
+    },
+    "hunt-laravel": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-laravel/SKILL.md",
+      "computedHash": "eef5468d07ad568f40a2196ef784e930baedcc65b29151dd0e6a7f4c11734793"
+    },
+    "hunt-ldap": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-ldap/SKILL.md",
+      "computedHash": "bf12db1378f4e1637168cfbaf428eb58c34021371c60513042d01773c1db19b4"
+    },
+    "hunt-lfi": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-lfi/SKILL.md",
+      "computedHash": "27b183582b928dff9530b26b9ed132a5cb2b9c6dc6390e68d92485375347c2dc"
+    },
+    "hunt-llm-ai": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-llm-ai/SKILL.md",
+      "computedHash": "c361517f11e9d94c2e11e7d3e23619daa8613e9cce007906f68a6600798b79de"
+    },
+    "hunt-mfa-bypass": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-mfa-bypass/SKILL.md",
+      "computedHash": "3d82e79dc0de2f50da8084b28a7626b04c6c66a3427953fde1d33c695e9e9987"
+    },
+    "hunt-misc": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-misc/SKILL.md",
+      "computedHash": "6295409852aeb35766d4d7548b0899241966ff343f3606d6c7a09908271712db"
+    },
+    "hunt-nextjs": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-nextjs/SKILL.md",
+      "computedHash": "5b7eb6138364eaf05ca99e2a507a0f2e1370a7622917d79d78b90d06adb400de"
+    },
+    "hunt-nodejs": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-nodejs/SKILL.md",
+      "computedHash": "e039b58d28df5f068d27f9659c00e90bde588e633d9b167e451d91e4b9bc9b00"
+    },
+    "hunt-nosqli": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-nosqli/SKILL.md",
+      "computedHash": "abce3bb4f782623643947b040584691bc9b3ce38bcf278a7d062cd16e9df2c9b"
+    },
+    "hunt-ntlm-info": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-ntlm-info/SKILL.md",
+      "computedHash": "376e2ad7697ffeff655da6fb0feb1d6469a80ba7a3a740cd04f5f072fb23768b"
+    },
+    "hunt-oauth": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-oauth/SKILL.md",
+      "computedHash": "cb572c3b40ef2f4606c6c9566e6eddcfb135e6376501759a8ad633a771695131"
+    },
+    "hunt-open-redirect": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-open-redirect/SKILL.md",
+      "computedHash": "7f06256dba740a282f72edef05f75e73b232a9beea0b2705ac419a8e32d29085"
+    },
+    "hunt-race-condition": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-race-condition/SKILL.md",
+      "computedHash": "650007bc9cdd5875398c22bae74a37ea8c259a3d43c9ffc94285afffe1fe28bc"
+    },
+    "hunt-rce": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-rce/SKILL.md",
+      "computedHash": "9e87fd6b5e9040719153af4057e35386b77044070845a8e46dbfd3df5b86c725"
+    },
+    "hunt-saml": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-saml/SKILL.md",
+      "computedHash": "4980e2fc1fd3f4c480a800d59e6ca7456acbdcfecda0153d1f9ffb2379e76da7"
+    },
+    "hunt-session": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-session/SKILL.md",
+      "computedHash": "e4b9d29f49159ca26485b21bc1f5f198f10b78e97209bfee1465ff072bfbacda"
+    },
+    "hunt-sharepoint": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-sharepoint/SKILL.md",
+      "computedHash": "c2125229e20f6a040931bf3e17598927c70329a59f6eb744c9559dae44d85406"
+    },
+    "hunt-source-leak": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-source-leak/SKILL.md",
+      "computedHash": "f656036ac45d0877f5b34cabfef5de2c35595197eb23af8a9d090f1d4d2b1b9b"
+    },
+    "hunt-springboot": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-springboot/SKILL.md",
+      "computedHash": "d52a143764d7986c5661483479e0d56e1bbde29e71ddb0730ea28fade967bd87"
+    },
+    "hunt-sqli": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-sqli/SKILL.md",
+      "computedHash": "87f76b492a8c1f74b977cada16ff3a0d8faf19f021e4e60672d101ee9686d37f"
+    },
+    "hunt-ssrf": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-ssrf/SKILL.md",
+      "computedHash": "a379128a3fbf51bbb25a4fc975e46308e3c7dc7044028aecbf76e7492179469e"
+    },
+    "hunt-ssti": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-ssti/SKILL.md",
+      "computedHash": "ef010bb0c6740fb91372cf97057b41439b4eeeaa92eac50038ef61a780eb5e67"
+    },
+    "hunt-subdomain": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-subdomain/SKILL.md",
+      "computedHash": "1a0e8eb4285c55c8f0eeb371fe057fa124739769338613e2701f0f4e9961c380"
+    },
+    "hunt-tls-network": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-tls-network/SKILL.md",
+      "computedHash": "8ca6752a58cd35a6f237e96407c7848369f6e41fb867f61de90b8fb6e3e68cbb"
+    },
+    "hunt-websocket": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-websocket/SKILL.md",
+      "computedHash": "99de72c10ce946116c840974cc58351d16dea436b98e0300cf0a1b5868a9c826"
+    },
+    "hunt-xss": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-xss/SKILL.md",
+      "computedHash": "361fd314231c1d93f5c842868a98797dbd3ecf2839396fa8cf6cedb024b016bc"
+    },
+    "hunt-xxe": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/hunt-xxe/SKILL.md",
+      "computedHash": "70ba3f78c56568431335dbfb22f05ac9dfc30d501167dd34278fd1a19b9647a2"
+    },
     "idea-refine": {
       "source": "addyosmani/agent-skills",
       "sourceType": "github",
@@ -1333,6 +1669,12 @@
       "skillPath": "plugins/ruflo-loop-workers/skills/loop-worker/SKILL.md",
       "computedHash": "a9b3552af6acf9c71b1da1fd9793d51431eb268c3a39f292ceaef7133cdbbea6"
     },
+    "m365-entra-attack": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/m365-entra-attack/SKILL.md",
+      "computedHash": "b36bfbba6e08e2c3089f43096a0957d4e1f45bba169535969bf5f697a4b90a02"
+    },
     "managed-agent": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -1351,6 +1693,12 @@
       "skillPath": "plugins/ruflo-market-data/skills/market-pattern/SKILL.md",
       "computedHash": "86644612aec44c49923ac6592c294bd035050b304a0f7657fa281b78c2be3c67"
     },
+    "meme-coin-audit": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/meme-coin-audit/SKILL.md",
+      "computedHash": "3d9be587b4dabd480e14543da6c04ce437b800fa16664532e56789020fbcfdee"
+    },
     "memory-bridge": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -1368,6 +1716,12 @@
       "sourceType": "github",
       "skillPath": "plugins/ruflo-rag-memory/skills/memory-search/SKILL.md",
       "computedHash": "194a0240879a826994b038159cb54c7e1ec865037011779771f4706a982b8cf8"
+    },
+    "mid-engagement-ir-detection": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/mid-engagement-ir-detection/SKILL.md",
+      "computedHash": "ac4eccf22e779d35e9588abd21f47ce91a4ff9e68163c57b5c8c410495acf4f0"
     },
     "migrate-create": {
       "source": "ruvnet/ruflo",
@@ -1483,6 +1837,24 @@
       "skillPath": ".claude/skills/obsidian-markdown/SKILL.md",
       "computedHash": "9ca4f671ffecfd020c8d9c733aed75bde42742fb5545b48b6bf8e5e54111b9ac"
     },
+    "offensive-osint": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/offensive-osint/SKILL.md",
+      "computedHash": "2b89c7452c20028a77f6f3dd161e34ae4647d0d0e938d3f14526ee3b9de43a3a"
+    },
+    "okta-attack": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/okta-attack/SKILL.md",
+      "computedHash": "24574b44e34c5a6e1fb1e5ddb79313169cb415dfa6dbddebf3b762401ebee861"
+    },
+    "osint-methodology": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/osint-methodology/SKILL.md",
+      "computedHash": "a841f9ed6bcd905701a21d7b580a18816bdeb800f7283b206504c263ccaab18a"
+    },
     "performance-analysis": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -1518,6 +1890,24 @@
       "sourceType": "github",
       "skillPath": "skills/receiving-code-review/SKILL.md",
       "computedHash": "2760c85d4f4117b0006e7ba755f4bbd61f8f4c185f347999763c97f507274e30"
+    },
+    "redteam-mindset": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/redteam-mindset/SKILL.md",
+      "computedHash": "c7d356cd5cf7ca5fdb5c58b9ecfaaa46a099aee2daf124f2cdded53a68e0ac03"
+    },
+    "redteam-report-template": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/redteam-report-template/SKILL.md",
+      "computedHash": "42973e7425e42aa62c0137a28a8a0d19b20d66a02e6e0242e21fc5a2099db954"
+    },
+    "report-writing": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/report-writing/SKILL.md",
+      "computedHash": "c89fb582e6a879936a082a4c215b4a95d0e42579c743d65222b1a488d2b0c4db"
     },
     "requesting-code-review": {
       "source": "obra/superpowers",
@@ -1566,6 +1956,12 @@
       "sourceType": "github",
       "skillPath": "skills/security-and-hardening/SKILL.md",
       "computedHash": "149ac0ecdf73998b17ba8edb51aaf614771dd576e50924058bf3bdedff3329f4"
+    },
+    "security-arsenal": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/security-arsenal/SKILL.md",
+      "computedHash": "c2103519b20765fdc3a96ee377e6bf1e57dd298dd3fd6757c599b096e246f2ff"
     },
     "security-audit": {
       "source": "ruvnet/ruflo",
@@ -1644,6 +2040,12 @@
       "sourceType": "github",
       "skillPath": "skills/subagent-driven-development/SKILL.md",
       "computedHash": "b38be2f3a092d758127f6d47e77c2493885aebf38aae359e4c786df2c343b837"
+    },
+    "supply-chain-attack-recon": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/supply-chain-attack-recon/SKILL.md",
+      "computedHash": "4a3f9ee8d7bb9565c20d0904f848ee927509c5e44627cc2eac5ba1a015ecf9d1"
     },
     "swarm-advanced": {
       "source": "ruvnet/ruflo",
@@ -1747,6 +2149,12 @@
       "skillPath": "plugins/ruflo-neural-trader/skills/trader-train/SKILL.md",
       "computedHash": "4eaeecfcd0ad60f553d2f540a38dcd6d178d84a8c492ed97c7811eda6dfac497"
     },
+    "triage-validation": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/triage-validation/SKILL.md",
+      "computedHash": "639e94a916798d83e100fd2cd621849aa6ac16d48e963d92415d89b2bb5b06bd"
+    },
     "using-agent-skills": {
       "source": "addyosmani/agent-skills",
       "sourceType": "github",
@@ -1807,6 +2215,12 @@
       "skillPath": "skills/verification-before-completion/SKILL.md",
       "computedHash": "9b446f0c7fe1cfb560b1d34439523b1a76d5f177290007b2c053a1c749a4a8ba"
     },
+    "vmware-vcenter-attack": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/vmware-vcenter-attack/SKILL.md",
+      "computedHash": "e5f0ac837efa88a6bfccc41cfc8206bd72f3f2172cd4fcc0828c3f6c72cfd47f"
+    },
     "wasm-agent": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
@@ -1818,6 +2232,18 @@
       "sourceType": "github",
       "skillPath": "plugins/ruflo-agent/skills/wasm-gallery/SKILL.md",
       "computedHash": "c9f67d332ffdb08a1e1340a62c2f6ec8ca34dbe9dd4c4f0c73cdbdcca8db6ee6"
+    },
+    "web2-recon": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/web2-recon/SKILL.md",
+      "computedHash": "51f5eca8165a9b7e2ddda6ede3f3103e2079dd0cb89d52e7a168d96653aaa546"
+    },
+    "web3-audit": {
+      "source": "elementalsouls/Claude-BugHunter",
+      "sourceType": "github",
+      "skillPath": "skills/web3-audit/SKILL.md",
+      "computedHash": "ea956840f37b576214af77e607c9716092093ee3cdffede9a486505d5cedd18e"
     },
     "witness": {
       "source": "ruvnet/ruflo",
