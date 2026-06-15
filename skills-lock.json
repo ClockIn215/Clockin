@@ -2179,6 +2179,192 @@
       "skillPath": "plugins/ruflo-plugin-creator/skills/validate-plugin/SKILL.md",
       "computedHash": "64febeaffd0bb8cd6b2e2d086f5657c55e746bd14e737399b65ac8a8e9f9ca69"
     },
+    "vc:agent-browser": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-agent-browser/SKILL.md",
+      "computedHash": "30bd6b72ab6c56a74b711b27da692755f8ca857cfa25756a7f6d102ef17e7e74"
+    },
+    "vc:audit-context": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-audit-context/SKILL.md",
+      "computedHash": "fe4b5f8ac6728a622278caf6b5114362a4eb03dd84f205ef14d543c71935a02b"
+    },
+    "vc:audit-plans": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-audit-plans/SKILL.md",
+      "computedHash": "f941fa439351b5010a29d99f25b62f25413515ec89d5034dda026c6231d69d22"
+    },
+    "vc:audit-vc": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-audit-vc/SKILL.md",
+      "computedHash": "798333b882af276345d8f8b309180ed910a21e6169d712b479988b0589600149"
+    },
+    "vc:autoresearch": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-autoresearch/SKILL.md",
+      "computedHash": "bf457beafcaa286e849246e2039aca2c2740b15359f4cef141401e22014d9213"
+    },
+    "vc:chrome-devtools": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-chrome-devtools/SKILL.md",
+      "computedHash": "012b513542440277a3478949a44a90fb0232c65217e9e21e893502bbc39d6bf2"
+    },
+    "vc:context-engineering": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-context-engineering/SKILL.md",
+      "computedHash": "494cc7a0339a14b9687e4a1e7ce9c953da76c4975cb4d288b8f31fc6b058269e"
+    },
+    "vc:debug": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-debug/SKILL.md",
+      "computedHash": "e279c8c833be68848b601aa050de405cf49ce8465aa7136cbad09f77184fb08a"
+    },
+    "vc:docs": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-docs/SKILL.md",
+      "computedHash": "9cd61960f9ba2e373058a68b9c8df547c86b2084cac2535f7dcfb60bb0945762"
+    },
+    "vc:docs-seeker": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-docs-seeker/SKILL.md",
+      "computedHash": "1c8284b361b2c55d8e4c699a7811a3439915579038234149a18c5ebb4cc7eeb5"
+    },
+    "vc:frontend-design": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-frontend-design/SKILL.md",
+      "computedHash": "2ba91b3cd9d1b88eaad9550c6c8f84dd7f5bc2fb707d56e5ebc28e8f1b541b5f"
+    },
+    "vc:generate-context": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-generate-context/SKILL.md",
+      "computedHash": "cf2c4b9bff0ea85b60d2d49beb9c51afb6b2a7cdb16f2a27684bdb998d276e0d"
+    },
+    "vc:generate-plan": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-generate-plan/SKILL.md",
+      "computedHash": "6baadde658841537c064ed9c6aaa6231a81100bf3c5059f8e9ca6aa23a45890c"
+    },
+    "vc:mcp-management": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-mcp-management/SKILL.md",
+      "computedHash": "7aaf410dfb2559a5c19a35693531e347a560caff925027f207df887a249f1153"
+    },
+    "vc:merge-worktree": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-merge-worktree/SKILL.md",
+      "computedHash": "f90bc6c5c8ab75f992a695df26df35b20755b6234048ab8d961e2a779f70e527"
+    },
+    "vc:predict": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-predict/SKILL.md",
+      "computedHash": "13ad792843dbac6ded278916a1b07fca3a8cc6c3611bec65868975816bbc3a33"
+    },
+    "vc:preview": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-preview/SKILL.md",
+      "computedHash": "d0362425040cd6908783bf29847686a17c4866ae354f7982525d871310a197fa"
+    },
+    "vc:problem-solving": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-problem-solving/SKILL.md",
+      "computedHash": "e2e1ece787b3764be8dfba06e2fb1af388a49da4f6e3be6db2a47dd1968dc547"
+    },
+    "vc:publish": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-publish/SKILL.md",
+      "computedHash": "ba4e76c947f5ee2b5b14630f5254729b51e0a671210e1e611829b68552867e6f"
+    },
+    "vc:repomix": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-repomix/SKILL.md",
+      "computedHash": "d7032a72cc5207dd8bf24659baf2165abd983306047a04199d4a8047a6338d9a"
+    },
+    "vc:scenario": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-scenario/SKILL.md",
+      "computedHash": "b502a161a266b1ebb27d4076127685ae8197605af3f61fbe3df7c13d94044a7d"
+    },
+    "vc:scout": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-scout/SKILL.md",
+      "computedHash": "8eda1c5816b8f424c8bfe59c09479074e0265cc3a9bdd03f6258c3c8f2837ef5"
+    },
+    "vc:security": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-security/SKILL.md",
+      "computedHash": "b3eb371a839d7c62935e23f3f5be5a7b181e42807aedd53881dc476ec7b8cb0c"
+    },
+    "vc:sequential-thinking": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-sequential-thinking/SKILL.md",
+      "computedHash": "ea050a013193c987227e10524719bb9f904872c39b48b1a48ae947e30a9c9edc"
+    },
+    "vc:setup": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-setup/SKILL.md",
+      "computedHash": "5906184c059bd8b73de70981d6fcfbc18d4970ef8d6d53a4e7e544f382a2dcdb"
+    },
+    "vc:team": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-team/SKILL.md",
+      "computedHash": "2141c6a6cef64c71ad3311044cd912aee55da7f4ad25ecb8e0ca4e6bcdf07899"
+    },
+    "vc:tech-graph": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-tech-graph/SKILL.md",
+      "computedHash": "30aacad1e82b3c91ffb1e936e39a16d0d81758abfd8c38385d64eac67636b036"
+    },
+    "vc:update": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-update/SKILL.md",
+      "computedHash": "89350f686eb7e56cbde267c3d7c50a367a7be451d583ba0559194d6d2cc912d0"
+    },
+    "vc:watzup": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-watzup/SKILL.md",
+      "computedHash": "565a5e7e02d06b64ee7cb282d9079b1402f0593c2e9865d66fb96c518aaa6b05"
+    },
+    "vc:web-testing": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-web-testing/SKILL.md",
+      "computedHash": "58dc01e8bd51887a7022ed27405eed200933833f8999f0533d6a7850224138ed"
+    },
+    "vc:xia": {
+      "source": "withkynam/vibecode-pro-max-kit",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/vc-xia/SKILL.md",
+      "computedHash": "483f9ab80d6216b1d8d1c49e441fa6c72a08bba178465f9e2fb842daf3614af0"
+    },
     "vector-cluster": {
       "source": "ruvnet/ruflo",
       "sourceType": "github",
