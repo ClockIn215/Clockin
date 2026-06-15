@@ -1,6 +1,66 @@
 {
   "version": 1,
   "skills": {
+    "build-iphone-apps": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/expertise/iphone-apps/SKILL.md",
+      "computedHash": "f5b88baa8b628e0b4d7e5bfc41d7a8c29037d07115f1573f7364de8abe466af2"
+    },
+    "build-macos-apps": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/expertise/macos-apps/SKILL.md",
+      "computedHash": "cb5f7dbfdec5f958481e45221f4bb41b13ce446265ff93a04ace64b00ff75d14"
+    },
+    "create-agent-skills": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/create-agent-skills/SKILL.md",
+      "computedHash": "729b1c44016ba533bf48fb1ca988038355bbd2d0b1880c708e5872f4ef16dcb4"
+    },
+    "create-hooks": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/create-hooks/SKILL.md",
+      "computedHash": "1061e597016c89f5be48467ba05d2f1328da249cff401a1456e477e67cd3de24"
+    },
+    "create-mcp-servers": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/create-mcp-servers/SKILL.md",
+      "computedHash": "362e0cc9c493b0483b6bac8aaad59a062f49bdcfa361ee4cc206f8a1506b4490"
+    },
+    "create-meta-prompts": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/create-meta-prompts/SKILL.md",
+      "computedHash": "190da5f1be804e9b352997d2bd46c5ea963b2cc46dd3b346fd375c8c8b69d102"
+    },
+    "create-plans": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/create-plans/SKILL.md",
+      "computedHash": "a0a4438639a149dea93de7aa46875651dc911faf230118499c4f35b8b23a33f1"
+    },
+    "create-slash-commands": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/create-slash-commands/SKILL.md",
+      "computedHash": "6b2e41c62848ca93a417b36ecb9800457758f084b3c977b06a083fbfa6bd7d4d"
+    },
+    "create-subagents": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/create-subagents/SKILL.md",
+      "computedHash": "c52b02222b81e02d7717575dbb63952cd4cf528de81fa59d6563113482d7404b"
+    },
+    "debug-like-expert": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/debug-like-expert/SKILL.md",
+      "computedHash": "82c4aef8b5cc5af9a7b00fb71bb57e527f6fdbc47f3d17f23f4e2688593f0684"
+    },
     "defuddle": {
       "source": "kepano/obsidian-skills",
       "sourceType": "github",
@@ -72,6 +132,18 @@
       "sourceType": "github",
       "skillPath": "skills/obsidian-markdown/SKILL.md",
       "computedHash": "d65bfcd6012560c61da9c88c79679a9a8218ac6b4928df9b55ae451949a1618a"
+    },
+    "setup-ralph": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/setup-ralph/SKILL.md",
+      "computedHash": "4aeca810e614dce8b5f68dd0d2d75edc45293eff4aae827519f0cead69290458"
+    },
+    "the-pirate-bay": {
+      "source": "glittercowboy/taches-cc-resources",
+      "sourceType": "github",
+      "skillPath": "skills/the-pirate-bay/SKILL.md",
+      "computedHash": "4e1bf681cd2fceda1b39da5a90943b18066fa746cd35f83e375f2853830608b6"
     }
   }
 }
